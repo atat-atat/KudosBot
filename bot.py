@@ -16,7 +16,7 @@ def module_checkup(modules):
 			if choice.lower().startswith("y"):
 				try:
 					pip.main(["install", v])
-					print("green", "Done!")
+					print("Done!")
 				except:
 					print("Failed to install {}, from {}.".format(k, v))
 			else:
